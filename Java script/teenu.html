@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 02</title>
+
+		<script>
+			function biggest()
+			{
+				var n1, n2, n3, n4, n5;
+                n1 = Number(document.getElementById("que1").value);
+                n2 = Number(document.getElementById("que2").value);
+                n3 = Number(document.getElementById("que3").value);
+                n4 = Number(document.getElementById("que4").value);
+                n5 = Number(document.getElementById("que5").value);
+				
+
+				if(n1>n2 && n1>n3  && n1>n4  && n1>n5)
+				{
+					window.alert(n1+" "+"is biggest");
+				}
+				else if(n2>n1 && n2>n3 && n2>n4  && n2>n5)
+				{
+					window.alert(n2+ " "+"is biggest");
+				}
+				else if(n3>n1 && n3>n1 && n3>n4  && n3>n5)
+				{
+					window.alert(n3+" "+"is biggest");
+                }
+                else if(n4>n1 && n4>n2 && n4>n3  && n4>n5)
+				{
+					window.alert(n4+" "+"is biggest");
+                }
+                else (n5>n1 && n5>n2 && n5>n3  && n5>n4)
+				{
+					window.alert(n5+" "+"is biggest");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Calculate biggest among five numbers</h1>
+		<hr color="red">
+		<br>
+		Enter number 1: <input type="text" id="que1"></input><br>
+		Enter number 2: <input type="text" id="que2"></input><br>
+        Enter number 3: <input type="text" id="que3"></input><br>
+        Enter number 4: <input type="text" id="que4"></input><br>
+		Enter number 5: <input type="text" id="que5"></input><br>
+		<hr color="red">
+		<button onclick="biggest()">click here</button>
+	</body>
+</html>

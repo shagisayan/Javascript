@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body> 
+   
+<h1 style="text-align: center;color: red;">JavaScript Tutorial</h1>
+<p id="demo"></p>
+<h1 id="demo1"></h1>
+<button onclick="message()">click</button>
+<script>
+
+  function message()
+  {
+  var age="9";
+  if(age<13)
+  {
+      mgs="child";
+  }   
+  else if(age<20)
+  {
+     mgs="teenager";
+  }
+  else if(age<40)
+  {
+      mgs="young";
+  }
+  else
+  {
+      mgs="old";
+  }
+
+document.getElementById("demo").innerHTML=mgs;
+
+  }
+
+      
+</script>
+
+</body>
+</html>
