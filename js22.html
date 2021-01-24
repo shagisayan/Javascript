@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: rebeccapurple;"> JS class</h1>
+    <p id="jsc"></p>
+    <p id="jsc1"></p>
+    <p id="jsc2"></p>
+       <script>
+/*
+           class Dress
+           {
+             constructor(size,price)
+             {
+                 this.size=size;
+                 this.price=price;
+             } 
+           }
+         dress1 = new Dress("small","Rs 2000");  
+         dress2 = new Dress("large","Rs 3500");
+         dress3 = new Dress("medium","Rs 3000")
+         document.getElementById("jsc").innerHTML = dress1.size + "-" +dress1.price;
+         document.getElementById("jsc1").innerHTML = dress2.size + "-" +dress2.price;
+         document.getElementById("jsc2").innerHTML = dress3.size + "-" +dress3.price;
+*/
+
+
+         class Student
+         {
+             constructor(fname,lname,byear)
+             {
+                 this.fname=fname;
+                 this.lname=lname;
+                 this.byear=byear;
+             }
+             
+             //age()
+             //{
+                // let date= new Date();
+                // return date.getFullYear() - this.byear;
+            // }
+            
+             age(x)
+             {
+             return x -this.byear;
+             }
+             fullname()
+             {
+                 return this.fname + " " + this.lname;
+             }
+            
+         }
+         
+         let year = new Date().getFullYear();
+         
+
+         stu1= new Student("shagi","sayan",1997);
+         stu2= new Student ("kajan","sayan",1992);
+
+         document.getElementById("jsc").innerHTML= "shagi's age is: " + stu1.age(year);
+         document.getElementById("jsc1").innerHTML= "kajan's age is: " + stu2.age(year);
+         document.getElementById("jsc2").innerHTML=  " Fullname is :" +stu1.fullname();
+
+        </script>
+</body>
+</html>

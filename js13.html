@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: rebeccapurple;text-align: center;">JavaScript Tutorial</h1>
+    <P id="js"></P>
+    <P id="js1"></P>
+
+     <script>
+         var day;
+         switch(new Date().getDay())
+         {
+             case 0:
+                 case 6:
+                 day="this is weekend!";
+                 break;
+
+                 case 1:
+                     day="monday";
+                     break;
+
+                        case 2:
+                            day="tuesday";
+                            break; 
+
+                               case 3:
+                                 day="wednesday";
+                                 break; 
+
+                                   case 4:
+                                       case 5:
+                                           day="weekend comming soon..."
+                                           break;
+
+
+                               
+         }
+document.getElementById("js").innerHTML=day;
+
+var month;
+switch(new Date().getMonth())
+{
+case 0:
+case 1:
+case 2:
+case 3:
+case 4:
+case 5: 
+case 6:
+    month="this is first 6 month";
+    break;
+
+case 7:
+case 8:
+case 9:
+case 10:
+case 11:
+case 12: 
+case 13:
+        month="this is last 6 month";
+        break;
+}
+
+
+        document.getElementById("js1").innerHTML=month;
+    
+
+
+
+
+
+
+     </script>
+
+</body>
+</html>

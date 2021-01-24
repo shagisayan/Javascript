@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta namee="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS array</title>
+    </head>
+    <body>
+        <h1 style="color: red;">QUESTION 02</h1>
+        <h3 id="qs2"></h3>
+        <h3 id="qs2a"></h3>
+        <h3 id="qs2b"></h3>
+        <h3 id="qs2c"></h3>
+        <script>
+            var num=[100, 50, 150, 15, 10];
+            document.getElementById("qs2").innerHTML=num.sort(function(a,b) {return (a-b)});
+            document.getElementById("qs2a").innerHTML="The min number is "+ num[0];
+            document.getElementById("qs2b").innerHTML=num.sort(function(a,b) {return (b-a)});
+            document.getElementById("qs2c").innerHTML="The max number is "+ num[0];
+        </script>
+    </body>
+</html>

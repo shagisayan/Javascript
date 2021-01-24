@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js</title>
+</head>
+<body>
+    <h1 style="color: red;text-align: center;">javascript - tutorial</h1>
+    <p id="js19"></p>
+    <p id="js19a"></p>
+
+    <script>
+         
+         //var chocolate=new Array("twix","topler","kandos","m&m","mars");
+        var chocolate=["twix","topler","kandos","m&m","mars"];
+        var tag="<ol>";
+            /*for(var i=0;i<chocolate.length;i++)
+            {
+                tag+="<li>"+chocolate[i]+"</li>";
+            }
+
+        tag+="</ol>";*/
+        
+        chocolate.forEach(namelist);
+        tag+="</ol>";
+        function namelist(value)
+        {
+            tag+="<li>"+value+"</li>";
+        }
+
+
+        document.getElementById('js19').innerHTML=tag;
+        //document.getElementById('js19a').innerHTML=chocolate; 
+
+    </script>
+
+</body>
+</html>

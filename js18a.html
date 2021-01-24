@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 18/01</title>
+</head>
+<body>
+    <h1> Js tutorial</h1>
+    <p id="js2"></p>
+    <script>
+
+         var i=5;
+         var numtext=" ";
+        do
+
+        {
+             
+            if(i===50)
+            {
+                continue;
+            }
+           
+            
+            numtext+= " <br> num is :" +i;
+             i+=5;
+
+        }
+
+        while (i<101);
+        
+
+         document.getElementById('js2').innerHTML=numtext;
+
+
+    </script>
+</body>
+</html>

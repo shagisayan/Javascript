@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS class </h1> 
+    <p id= "jsc"></p>  
+    <p id= "js1"></p>
+    <p id= "js2"></p>
+    <script>
+
+   class student 
+   {
+       constructor(name)
+       {
+           this.stuname= name;
+       }
+       get studname()
+       {
+           return this.stuname;
+       }
+
+       set studname(x)
+       {
+           this.stuname=x;
+       }
+       
+    } 
+
+    let stu1= new student("shagi");
+    stu1.stuname="shanku";
+    document.getElementById("jsc").innerHTML=stu1.stuname;
+       </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ukistu20(shagira)</title>
+</head>
+<body>
+    <h1>QUESTION 03</h1>
+    <p id="que2"></p>
+    <script>
+       function assignGrade(marks)
+       {
+           if(marks>=75)
+            {
+           return 'A';
+            }
+       
+           else if(marks>=60)
+           {
+           return 'B';
+           }
+       
+           else if(marks>=45)
+           {
+           return 'C';
+           }
+       
+           else(marks<45)
+           {
+           return 'F';
+           }
+       }
+
+document.getElementById("que2").innerHTML="You got a"+" "+ assignGrade(88)+" grade.";
+
+
+    </script>
+</body>
+</html>
